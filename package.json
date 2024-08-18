@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon"
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,7 @@
   "dependencies": {
     "@octokit/rest": "^21.0.1",
     "body-parser": "^1.20.2",
+    "cron": "^3.1.7",
     "express": "^4.19.2",
     "twitter-api-v2": "^1.17.2"
   }
