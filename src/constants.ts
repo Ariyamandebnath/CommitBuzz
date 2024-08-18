@@ -9,6 +9,9 @@ interface TwitterKeys {
     accessToken: string;
     accessSecret: string;
     bearerToken: string;
+    clientSecret: string;
+    clientId: string;
+    callbackUrl: string;
 }
 
 // Export the PORT with a default value
@@ -21,4 +24,8 @@ export const TwitterKeys: TwitterKeys = {
     accessToken: process.env.TWITTER_ACCESS_TOKEN as string,
     accessSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET as string,
     bearerToken: process.env.BEARER_TOKEN as string,
+
+    clientId: process.env.Client_ID as string,
+    clientSecret: process.env.Client_Secret as string,
+    callbackUrl: process.env.callbackUrl as string,
 };
