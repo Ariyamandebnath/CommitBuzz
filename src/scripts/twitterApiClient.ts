@@ -19,6 +19,7 @@ export const twitterClient = new TwitterApi({
 export const AutoTweet= async (tweetText: string) =>{
     try {
         await twitterClient.v2.tweet(tweetText);
+        console.log("Tweet sent successfully")
     } catch (error) {
         console.log("Error sending Tweet:", error);
         
