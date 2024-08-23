@@ -10,6 +10,12 @@ interface TwitterKeys {
     accessSecret: string;
 }
 
+interface GithubKeys {
+    Github_AppID: number;
+    Github_ClientID: string;
+    Github_ClientSecrete: string;
+}
+
 // Export the PORT with a default value
 export const Port: number = Number(process.env.PORT) || 3000;
 
@@ -20,3 +26,10 @@ export const TwitterKeys: TwitterKeys = {
     accessToken: process.env.TWITTER_ACCESS_TOKEN as string,
     accessSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET as string,
 };
+
+export const GithubKeys: GithubKeys = {
+    Github_AppID : Number(process.env.Github_AppID )||0,
+    Github_ClientID: process.env.Github_ClientID as string,
+    Github_ClientSecrete: process.env.Github_ClientSecrete as string,
+}
+

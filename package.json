@@ -25,10 +25,18 @@
     "typescript-eslint": "^8.1.0"
   },
   "dependencies": {
-    "@octokit/rest": "^21.0.1",
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.25.3",
+    "@octokit/app": "^15.1.0",
+    "@octokit/rest": "^21.0.2",
     "body-parser": "^1.20.2",
     "cron": "^3.1.7",
+    "datetime": "^0.0.3",
     "express": "^4.19.2",
+    "os": "^0.1.2",
+    "requests": "^0.3.0",
     "twitter-api-v2": "^1.17.2"
   }
 }
